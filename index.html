@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="check()">
+    <nav>
+        <div class="logo">
+            <h1>Header</h1>
+        </div>
+        <div class="right">
+            <div class="signup"><h1>Signup</h1></div>
+            <div class="signup"><h1>Profile</h1></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1>Signup</h1>
+        </div>
+
+        <div class="formContainer">
+            <form onsubmit="loginSubmit(event)">
+                <div class="formGroup">
+                    <input id="fname"  type="text" placeholder="Full name" size="80">
+                </div>
+                <div class="formGroup">
+                    <input id="email" type="email" placeholder="Email" size="80">
+                </div>
+                <div class="formGroup">
+                    <input id="password" type="password" placeholder="Password" size="80">
+                </div>
+                <div class="formGroup">
+                    <input id="cnf" type="password" placeholder="Confirm Password" size="80">
+                </div>
+               
+
+                <span class="hide" id ="res"></span>
+                <button type="submit">signup</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
